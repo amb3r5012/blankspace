@@ -1,0 +1,79 @@
+/*
+	--- layout_temp.css ---
+Contains design and font-related sett. [temp]
+	Last edited: 29/03/2016
+*/
+@charset "utf-8";
+/* HTML Default Settings */
+html, 
+body, 
+.container, 
+.content-wrap {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+li{
+	display: inline-block;
+}
+*:focus {
+    outline: none;
+}
+a .navigation_panel {
+	color: white;
+} 
+
+/* Main Layout */
+.header {
+	position: fixed;
+	display: inline-block;
+	margin: 0em;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.navigation_panel {
+	display: inline-block;
+	unicode-bidi: isolate;
+	padding: 1em;
+	list-style: none;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+.menu_profile {
+	float: right;
+}
+form {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0.75em 0.2em 0.75em 0.5em;
+}
+#searchb_q {
+	padding: 0.15em 2em 0.15em 0.5em;
+	border:0px solid #dbdbdb;
+	border-radius: 8px;
+	font-size: 18px;
+	color: rgb(100, 100, 100);
+}
+#btn__searchb {
+	position:absolute;
+	-moz-transform: translateX(20px);
+	-webkit-transform: translateX(20px);
+	-o-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(17em);
+	margin: 0.2em;
+	border: none;
+	background-color: transparent;
+	color: orange;
+	z-index: 0110;
+}

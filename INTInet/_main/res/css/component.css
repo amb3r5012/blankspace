@@ -1,0 +1,68 @@
+/*
+	--- component.css ---
+Contains transitions sett.
+	Last edited: 29/03/2016
+*/
+@charset "utf-8";
+
+/**/
+.btn__nav {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 0200;
+}
+.btn__nav:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #fff;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn__nav:hover,
+.btn__nav:active {
+	color: orange;
+}
+
+.btn__nav:hover:after {
+	height: 100%;
+}
+.btn__nav:active:after {
+	height: 0%;
+}
+.btn__nav:before {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: orange;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.focused {
+	background: white;
+	text: orange;
+}
+.btn__nav--current {
+	background: white;
+	color: orange;
+}
