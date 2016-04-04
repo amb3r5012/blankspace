@@ -20,25 +20,41 @@ body,
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+}
+.link {
+	text-decoration: none;
 }
 li{
 	display: inline-block;
 }
+form {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0.75em 0.2em 0.75em 0.5em;
+}
 *:focus {
     outline: none;
 }
-a .navigation_panel {
-	color: white;
-} 
 
 /* Main Layout */
+
+/*--- Header ---*/
 .header {
 	position: fixed;
 	display: inline-block;
-	margin: 0em;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: orange;
+	z-index: 0100;
+}
+div .header {
+	display: inline-block;
 }
 .navigation_panel {
 	display: inline-block;
@@ -49,13 +65,12 @@ a .navigation_panel {
 	text-align: center;
 	vertical-align: middle;
 }
-.menu_profile {
-	float: right;
-}
-form {
-	display: inline-block;
-	font-size: 20px;
-	margin: 0.75em 0.2em 0.75em 0.5em;
+a .btn_nav {
+	color: white;
+} 
+.btn__nav--current {
+	background: white;
+	color: orange;
 }
 #searchb_q {
 	padding: 0.15em 2em 0.15em 0.5em;
@@ -63,17 +78,46 @@ form {
 	border-radius: 8px;
 	font-size: 18px;
 	color: rgb(100, 100, 100);
+	z-index: 0110;
 }
 #btn__searchb {
 	position:absolute;
-	-moz-transform: translateX(20px);
-	-webkit-transform: translateX(20px);
-	-o-transform: translateX(20px);
-	-ms-transform: translateX(20px);
+	-moz-transform: translateX(17em);
+	-webkit-transform: translateX(17em);
+	-o-transform: translateX(17em);
+	-ms-transform: translateX(17em);
 	transform: translateX(17em);
 	margin: 0.2em;
 	border: none;
 	background-color: transparent;
 	color: orange;
-	z-index: 0110;
+	z-index: 0111;
+}
+.account {
+	display: inline-block;
+	unicode-bidi: isolate;
+	padding: 0.5em 2em;
+	list-style: none;
+	float: right;
+}
+
+/*--- Container -- Course ---*/
+#clearfix_container {
+	margin-left: 20em;
+	background-image: url(../images/inti_logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.container {
+	position: relative;
+	width: 90%;
+	margin: 0px 5%;
+	padding-right: calc(100%);
+	transform: translateY(58px);
+	overflow: scroll;
+}
+.div__course {
+	display: inline-block;
+	width: 30%;
+	margin: 2em 1em;
 }

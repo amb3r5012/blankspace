@@ -1,18 +1,18 @@
 // JavaScript Document
-/*(function() {
-	var el = document.getElementById("header");
-	
-	el.addEventListener('click', function() {
-		if (classie.has(el,"btn--current")) {
-    		classie.remove(el,"btn--current");
-		} else {
-    		classie.add(el,"btn--current");
-		}
-	});
-});*/
-$( ".navigation_panel" ).delegate( "*", "focus blur", function() {
-  var elem = $( this );
-  setTimeout(function() {
-    elem.toggleClass( "focused", elem.is( ":focus" ) );
-  }, 0 );
-});
+function loadContainer_Course() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
