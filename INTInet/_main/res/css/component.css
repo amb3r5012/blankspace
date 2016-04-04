@@ -1,10 +1,11 @@
 /*
 	--- component.css ---
 Contains transitions sett.
-	Last edited: 29/03/2016
+	Last edited: 03/04/2016
 */
 @charset "utf-8";
 
+/*--- Navigation Panel - Menu Buttons ---*/
 .btn__nav {
 	border: none;
 	font-family: inherit;
@@ -34,12 +35,10 @@ Contains transitions sett.
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-
 .btn__nav:hover,
 .btn__nav:active {
 	color: orange;
 }
-
 .btn__nav:hover:after {
 	height: 100%;
 }
@@ -56,7 +55,4 @@ Contains transitions sett.
 	line-height: 1;
 	position: relative;
 	-webkit-font-smoothing: antialiased;
-}
-.btn__default:hover {
-	color: rgba(255, 255, 255, 0.9);
 }
